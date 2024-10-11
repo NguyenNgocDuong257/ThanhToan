@@ -1,0 +1,780 @@
+﻿﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<style>
+
+    .zone {
+        display: flex;
+        background-color: lightgrey;
+    }
+
+    .ptgiaohang {
+        background-color: white;
+        margin-right: 10px;
+        margin-left: 100px;
+    }
+
+    .khung {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    .tren {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .duoi {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: left;
+    }
+
+    .ten {
+        text-align: center;
+        align-items: center;
+        justify-content: left;
+        margin-top: 10px;
+    }
+
+    .gia {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    .duoi img {
+        height: 55px;
+        width: auto;
+        margin-right: 5px;
+    }
+
+    .phanchung {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .phanbenphai a {
+        font-size: 20px;
+        color: white;
+        background-color: grey;
+        text-decoration: none;
+    }
+
+    a {
+        font-size: 25px;
+        text-decoration: none;
+        margin-top: 10px;
+        color: black;
+        font-weight: bold;
+    }
+
+        a b {
+            font-size: 20px;
+            color: grey;
+        }
+
+    .ptthanhtoan {
+        background-color: white;
+        margin-right: 10px;
+        margin-left: 100px;
+    }
+
+    .luachon {
+        font-size: 20px;
+        text-align: left;
+        align-items: center;
+    }
+
+    .theNoidia {
+        font-size: 20px;
+        text-align: left;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    .luachon ul {
+        list-style-type: none;
+    }
+
+    .new a {
+        border: 1px solid cornflowerblue;
+        text-decoration: none;
+        color: cornflowerblue;
+        display: inline-block;
+        font-size: 22px;
+        margin-left: 30px;
+        padding: 5px 10px;
+    }
+
+    .uudaithanhtoan {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        font-size: 25px;
+    }
+
+        .uudaithanhtoan i {
+            margin-right: 3px;
+        }
+
+    .uudai {
+        margin-top: 20px;
+        border: 1px solid cornflowerblue;
+        width: 70%;
+        height: auto;
+        margin-left: 200px;
+        background-color: lightsteelblue;
+        color: royalblue;
+    }
+
+    .sale {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .voucher {
+        border: 1px solid lightsteelblue;
+        padding: 0px 50px;
+        margin: 5px;
+        background-color: white;
+        border-radius: 7px;
+    }
+
+        .voucher h2 {
+            font-size: 20px;
+        }
+
+        .voucher p {
+            font-size: 14px;
+            color: darkgrey;
+        }
+
+        .voucher .ghiChu {
+            color: darkorange;
+        }
+
+    .right {
+        background-color: white;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 50px;
+    }
+
+    .giaoHang {
+        display: grid;
+        border: 1px solid grey;
+        margin: 10px;
+    }
+
+    .giao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .giao h3 {
+            color: lightslategrey;
+            font-size: 18px;
+            margin-left: 50px;
+        }
+
+        .giao a {
+            text-decoration: none;
+            font-size: 18px;
+            color: blue;
+            margin-right: 50px;
+        }
+
+    .hoTenSdt {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 30px;
+    }
+
+        .hoTenSdt .sdt {
+            border-inline-start: 1px solid #9f9f9f;
+            padding: 0px 0px 0px 10px;
+        }
+
+    .diaChi {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-left: 10px;
+    }
+
+        .diaChi .nha {
+            display: inline-block;
+            border: 1px solid #9f9f9f;
+            padding: 5px;
+            font-size: 14px;
+            background-color: lightgray;
+            color: forestgreen;
+        }
+
+        .diaChi p {
+            font-size: 16px;
+            color: lightslategrey;
+        }
+
+    .tikiKM {
+        margin-top: 10px;
+        border: 1px solid grey;
+        margin: 10px;
+    }
+
+    .tkKM {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .zalopay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .zalopay img {
+            width: 50px;
+            border: 1px solid grey;
+            padding: 5px;
+            border-radius: 0 5px 5px 0;
+            border-inline-end: 1px dashed grey;
+        }
+
+
+
+    .giamGia {
+        display: flex;
+        border: 1px solid grey;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        padding: 5px;
+        border-radius: 5px 0 0 5px;
+        border-inline-start: 1px dashed grey;
+    }
+
+        .giamGia a {
+            text-decoration: none;
+            display: inline-block;
+            border: 1px solid dodgerblue;
+            background-color: dodgerblue;
+            color: white;
+            padding: 5px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+    .theKhac a {
+        font-size: 16px;
+        margin-left: 30px;
+        color: blue;
+    }
+
+    .asa {
+        margin-top: 10px;
+        border: 1px solid grey;
+        margin: 10px;
+    }
+
+    .gg1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .gg1 pre {
+            margin-left: 20px;
+        }
+
+    .congTat {
+        width: 40px;
+        height: 20px;
+        appearance: none;
+        background-color: lightgray;
+        border-radius: 25px;
+        position: relative;
+        margin-right: 20px;
+    }
+
+        .congTat::before {
+            content: " ";
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            border-radius: 50%;
+            top: 3px;
+            left: 3px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .congTat:checked {
+            background-color: lightskyblue;
+        }
+
+            .congTat:checked:before {
+                left: 22px;
+            }
+
+    .gg2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .gg2 pre {
+            margin-left: 20px;
+        }
+
+    .ycHoadon {
+        margin-top: 10px;
+        border: 1px solid grey;
+        margin: 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .hoaDon {
+        margin-top: 13px;
+        margin-left: 10px;
+    }
+
+    .donHang {
+        margin: 10px;
+    }
+
+    .dh {
+        display: flex;
+        border: 1px solid grey;
+        justify-content: space-between;
+    }
+
+    .trai {
+        margin-left: 20px;
+    }
+
+    .dh .trai a {
+        font-size: 12px;
+        text-decoration: none;
+        color: blue;
+    }
+
+    .phai {
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+
+        .phai a {
+            font-size: 12px;
+            text-decoration: none;
+            color: blue;
+        }
+
+    .tinhTien {
+        border: 1px solid grey;
+    }
+
+    .Tamtinh {
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .phiVC {
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .KMVC {
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+    }
+
+        .KMVC #KhuyenMai {
+            color: green
+        }
+
+    .Tong {
+        border: 1px solid grey;
+    }
+
+    .txtTien {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+
+    .Tong p {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btnDH {
+        width: 80%;
+        background-color: red;
+        color: white;
+        padding: 10px;
+        margin: 0 40px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<html>
+<head>
+    <title>Thanh Toán - Tiki</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+
+    <script language="Javascript">
+        function DisplayMsg() {
+            alert("Đặt hàng thành công");
+        }
+
+
+        function TinhTong() {
+            var TamTinh = parseFloat(document.getElementById("tamTinh").value);
+            var PhiVC = parseFloat(document.getElementById("Phivc").value);
+            var KhuyenMai = parseFloat(document.getElementById("KhuyenMai").value);
+
+            window.document.getElementById("iTotal").innerHTML = TamTinh + PhiVC + KhuyenMai;
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <section class="zone">
+            <section class="left">
+                <section class="ptgiaohang">
+                    <h2>Chọn phương thức giao hàng</h2>
+                    <div class="khung">
+                        <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                        <lable>Giao hàng tiết kiệm</lable>
+                        <button class="btn">-30K</button>
+                    </div>
+                    <fieldset>
+                        <legend>
+                            Gói: Giao thứ 5, trước 19h, 26/10
+                        </legend>
+                        <div class="phanchung">
+                            <div class="phanbentrai">
+                                <div class="tren">
+                                    <p>GIAO HÀNG TIẾT KIỆM</p>
+                                    <p><del>42.000</del> 12.000</p>
+                                </div>
+                                <div class="duoi">
+                                    <img src="~/Content/img/samsung.png" />
+                                    <div class="ten">
+                                        <p>Điện thoại Samsung Galaxy A54 5G</p>
+                                        <div class="gia">
+                                            <p>SL:1</p>
+                                            <p> 8.480.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="phanbenphai">
+                                <a href="#"><i class="fas fa-truck-moving"></i> Được giao bởi GIA DỤNG VIỆT</i></a>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <a href="#">Shop khuyến mãi <b>Nhập hoặc chọn mã ></b></a>
+                </section>
+
+                <section class="ptthanhtoan">
+                    <h2>Chọn hình thức thanh toán</h2>
+                    <div class="luachon">
+                        <ul>
+                            <li>
+                                <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                                <i class="fas fa-money-bill-wave-alt"></i>
+                                <lable>Thanh toán tiền mặt khi nhận hàng</lable>
+                            </li>
+                            <li>
+                                <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                                <i class="fab fa-vuejs"></i>
+                                <lable>Thanh toán bằng ví Viettle Money</lable>
+                            </li>
+                            <li>
+                                <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                                <i class="fab fa-medium-m"></i>
+                                <lable>Thanh toán bằng ví Momo</lable>
+                            </li>
+                            <li>
+                                <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                                <i class="fab fa-cc-amazon-pay"></i>
+                                <lable>Thanh toán bằng ví ZaloPay</lable>
+                            </li>
+                            <li>
+                                <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                                <i class="fab fa-vimeo-square"></i>
+                                <lable>Thanh toán bằng VNPAY</lable>
+                            </li>
+                            <li>
+                                <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-jcb"></i>
+                                <lable>Thanh toán bằng thẻ quốc tế Visa, Master,JCB</lable>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="new">
+                        <a href="#">+ Thêm thẻ mới</a>
+                    </div>
+
+                    <div class="uudai">
+                        <div class="uudaithanhtoan">
+                            <i class="fas fa-life-ring"></i>
+                            <p>Ưu đãi thanh toán thẻ</p>
+                        </div>
+
+                        <div class="sale">
+
+                            <div class="listvoucher">
+                                <div class="voucher">
+                                    <h2>Freeship</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                                <div class="voucher">
+                                    <h2>Freeship</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                                <div class="voucher">
+                                    <h2>Freeship</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                            </div>
+
+                            <div class="listvoucher">
+                                <div class="voucher">
+                                    <h2>Giảm 30k</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                                <div class="voucher">
+                                    <h2>Giảm 30k</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                                <div class="voucher">
+                                    <h2>Giảm 30k</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                            </div>
+
+
+                            <div class="listvoucher">
+                                <div class="voucher">
+                                    <h2>Giảm 50k</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                                <div class="voucher">
+                                    <h2>Giảm 50k</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                                <div class="voucher">
+                                    <h2>Giảm 50k</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                            </div>
+
+                            <div class="listvoucher">
+                                <div class="voucher">
+                                    <h2>Giảm 70k</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                                <div class="voucher">
+                                    <h2>Giảm 70k</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                                <div class="voucher">
+                                    <h2>Giảm 70k</h2>
+                                    <p>Thẻ Shinhan platinum</p>
+                                    <p class="ghiChu"><i>Không giới hạn</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="theNoidia">
+                        <input type="radio" name="tietkiem" value="Giao hàng tiết kiệm" />
+                        <i class="far fa-credit-card"></i>
+                        <lable>Thẻ ATM nội địa/Internet Banking(Hỗ trọ Internet Banking)</lable>
+                    </div>
+                </section>
+            </section>
+
+
+            <section class="right">
+
+                <section class="giaoHang">
+                    <div class="giao">
+                        <h3>Giao tới</h3>
+                        <a href="#">Thay đổi</a>
+                    </div>
+
+                    <div class="hoTenSdt">
+                        <p>Quoc Tran Bao</p>
+                        <p class="sdt">0328370905</p>
+                    </div>
+
+                    <div class="diaChi">
+                        <p class="nha">Nhà</p>
+                        <p>52 Trần Hưng Đạo, Phường 04, Quận 5, TP.Hồ Chí Minh</p>
+                    </div>
+                </section>
+
+                <section class="tikiKM">
+                    <div class="tkKM">
+                        <h3>Tiki Khuyến Mãi</h3>
+                        <p>Có thể chọn 2</p>
+                    </div>
+
+                    <div class="zalopay">
+
+                        <img src="~/Content/img/zalopay.png" />
+
+                        <div class="giamGia">
+                            <p>Giảm 50k</p>
+                            <a href="#">Áp dụng</a>
+                        </div>
+                    </div>
+
+                    <div class="theKhac">
+                        <a href="#">Chọn hoặc nhập mã khuyến mãi khác</a>
+                    </div>
+                </section>
+
+                <section class="asa">
+                    <div class="gg1">
+                        <pre>
+<b>Chưa áp dụng giảm giá</b>
+vì chưa đạt đủ số lượng ASA
+</pre>
+
+                        <div class="switch">
+                            <input type="checkbox" class="congTat" id="Congtat" />
+                        </div>
+                    </div>
+
+                    <div class="gg2">
+                        <pre>
+<b>Chưa áp dụng giảm giá</b>
+vì sở hữu chưa đủ tối thiểu 1000 xu
+</pre>
+                        <div class="switch">
+                            <input type="checkbox" class="congTat" id="Congtat" />
+                        </div>
+                    </div>
+                </section>
+
+                <section class="ycHoadon">
+                    <div class="hoaDon">
+                        <input type="checkbox" class="hd" />
+                    </div>
+                    <div class="inHd">
+                        <pre>
+Yêu cầu hóa đơn
+Tiki Trading chỉ xuất hóa đơn điện tử
+</pre>
+                    </div>
+                </section>
+
+                <section class="donHang">
+                    <div class="dh">
+                        <div class="trai">
+                            <pre><b>Đơn hàng</b>
+1 sản phẩm. <a href="#">Xem thông tin</a>
+</pre>
+                        </div>
+                        <div class="phai">
+                            <a href="#">Thay đổi</a>
+                        </div>
+
+                    </div>
+
+                    <form method="post">
+                        <div class="tinhTien">
+                            <div class="Tamtinh">
+                                <p>Tạm tính</p>
+                                <p id="tamTinh">8480000</p>
+                            </div>
+                            <div class="phiVC">
+                                <p>Phí vận chuyển</p>
+                                <p id="Phivc">42000</p>
+                            </div>
+                            <div class="KMVC">
+                                <p>Khuyến mãi vận chuyển</p>
+                                <p id="KhuyenMai">-30000</p>
+                            </div>
+                        </div>
+
+                        <div class="Tong">
+                            <div class="txtTien">
+                                <p>Tổng tiền</p>
+                                <input type="text" id="iTotal" onchange="TinhTong();" />
+                            </div>
+
+                            <input type="button" class="btnDH" value="Đặt Hàng"
+                                   onclick="DisplayMsg();" />
+                        </div>
+                    </form>
+
+                </section>
+            </section>
+        </section>
+
+
+
+
+    </section>
+</body>
+</html>
+
